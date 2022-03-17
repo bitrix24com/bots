@@ -1,34 +1,26 @@
-# Где прочитать документацию? #
+# Where to find Bitrix24 bot-related documentation? #
 
-Документация доступна по адресу https://bitrix24.ru/~bot
+The documentation is available at: https://training.bitrix24.com/support/training/course/index.php?COURSE_ID=115&INDEX=Y
 
-### Что в этом репозитории? ###
+### What are contents of this repository? ###
 
-* Три готовых к работе чат-бота:
-* EchoBot - бот повторящий входящие сообщения, с поддержкой всех ключевых возможностей платформы.
-* ITR Bot - бот для Открытых линий, в коде присутствует конструктор многоуровневых меню.
-* ServiceBot - бот сервис для чатов, данный тип бота отслеживает все сообщения в чате.
+Contains three completed chatbots:
+* EchoBot: bot repeats incoming messages and supports all key platform features.
+* ITR Bot: bot for Open Channels, with multi-level menu constructor available in the code.
+* ServiceBot: service bot for chats. This bot type tracks all messages in a chat.
 
-### Видео презентации ###
+### How should I update the bot? ###
 
-* Как работает бот [на YouTube](https://youtu.be/la5F7hmnZrc)
-* Как работают команды бота и активные ссылки [на YouTube](https://youtu.be/esFHYl-2kIQ)
-* Как работают набираемые клавиатуры [на YouTube](https://youtu.be/rkIzb0QY2kY)
+*First, you need to understand what do you want to do with this bot :)*
 
-### Что мне нужно в нем изменить? ###
+When this bot responds only when initiated by users:
+* In basic version, no changes needed
+* However, you can think about security and change methods for storage of logs, cache and app settings
 
-Для этого нужно понять что вы хотите с ним делать :)
+*When this bot sometimes may initiate contact with users:*
+* Change constants CLIENT_ID and CLIENT_SECRET to be issued to you inside partner account or in local applications
+* you can also ensure security and change storage methods for message logs, cache and app settings  
 
-*Если этот бот будет отвечать только по инициативе пользователей*
+### Attention ###
 
-* В базовом варианте, менять ничего не надо
-* Но вы можете подумать о безопасности и поменять методы хранения лога обращений, кеша и настроек приложений
-
-*Если этот бот будет иногда сам писать пользователям*
-
-* Заменить константы CLIENT_ID и CLIENT_SECRET которые будут выданы вам в партнерском кабинете или в локальных приложениях
-* так же вы можете подумать о безопасности и поменять методы хранения лога обращений, кеша и настроек приложений
-
-### Внимание ###
-
-Боты представлены только для ознакомительных целей, вы можете использовать их в своих проектах, но ответственность работу ваших приложений лежит полностью на вас.
+Bots are presented for informational purposes only and you can use them in your projects. However, you are fully responsible for operation of your applications.
